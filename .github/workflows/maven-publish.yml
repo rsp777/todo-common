@@ -30,7 +30,7 @@ jobs:
         token: ${{ github.token }}
    
     - name: Build with Maven
-      run: mvn -U package --file pom.xml
+      run: mvn -U install --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
