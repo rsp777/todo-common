@@ -1,0 +1,13 @@
+com\pawar\inventory\entity\Lpn.class
+com\pawar\todo\dto\JwtResponseDto.class
+com\pawar\todo\dto\LoginDto.class
+com\pawar\todo\dto\TaskDto.class
+com\pawar\todo\dto\PermissionDto.class
+com\pawar\inventory\entity\Item.class
+com\pawar\todo\dto\UserDto.class
+com\pawar\todo\dto\RoleDto.class
+com\pawar\todo\dto\UserRolesDto.class
+com\pawar\inventory\entity\Category.class
+com\pawar\inventory\entity\Location.class
+com\pawar\inventory\entity\Inventory.class
+com\pawar\inventory\main\Main.class

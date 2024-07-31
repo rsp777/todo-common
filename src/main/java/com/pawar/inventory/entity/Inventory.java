@@ -1,6 +1,11 @@
-package com.pawar.inventory.model;
+package com.pawar.inventory.entity;
 
 import java.time.LocalDateTime;
+
+import com.pawar.inventory.entity.Lpn;
+import com.pawar.inventory.entity.Item;
+import com.pawar.inventory.entity.Location;
+import com.pawar.inventory.entity.Lpn;
 
 public class Inventory {
 
@@ -11,7 +16,7 @@ public class Inventory {
 	
 	
 	private Item item;
-	private double on_hand_qty;	
+	private float on_hand_qty;	
 	private Location location;
 	private String locn_class;
 	private LocalDateTime created_dttm;
@@ -23,7 +28,7 @@ public class Inventory {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Inventory(int inventory_id, Lpn lpn, Item item, double on_hand_qty, Location location,
+	public Inventory(int inventory_id, Lpn lpn, Item item, float on_hand_qty, Location location,
 			String locn_class, LocalDateTime created_dttm, LocalDateTime last_updated_dttm, String created_source,
 			String last_updated_source) {
 		this.inventory_id = inventory_id;
@@ -62,11 +67,11 @@ public class Inventory {
 		this.item = item;
 	}
 
-	public double getOn_hand_qty() {
+	public float getOn_hand_qty() {
 		return on_hand_qty;
 	}
 
-	public void setOn_hand_qty(double on_hand_qty) {
+	public void setOn_hand_qty(float on_hand_qty) {
 		this.on_hand_qty = on_hand_qty;
 	}
 

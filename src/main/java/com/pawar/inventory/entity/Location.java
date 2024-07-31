@@ -1,4 +1,4 @@
-package com.pawar.inventory.model;
+package com.pawar.inventory.entity;
 
 import java.time.LocalDateTime;
 
@@ -8,15 +8,15 @@ public class Location {
 	private int locn_id;
 	private String locnBrcd;
 	private String locnClass;
-	private double length;
-	private double width;
-	private double height;
-	private double maxWeight;
-	private double maxVolume;
-	private double maxQty;
-	private double occupiedQty;	
-	private double currVol;
-	private double currWeight;
+	private float length;
+	private float width;
+	private float height;
+	private float maxWeight;
+	private float maxVolume;
+	private float maxQty;
+	private float occupiedQty;	
+	private float currVol;
+	private float currWeight;
 	private LocalDateTime createdDttm;
 	private LocalDateTime lastUpdatedDttm;
 	private String createdSource;
@@ -26,8 +26,8 @@ public class Location {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Location(int locn_id, String locnBrcd, String locnClass, double length, double width, double height,
-			double maxWeight, double maxVolume, double maxQty,double occupiedQty, double currVol, double currWeight,
+	public Location(int locn_id, String locnBrcd, String locnClass, float length, float width, float height,
+			float maxWeight, float maxVolume, float maxQty,float occupiedQty, float currVol, float currWeight,
 			LocalDateTime createdDttm, LocalDateTime lastUpdatedDttm, String createdSource, String lastUpdatedSource) {
 		super();
 		this.locn_id = locn_id;
@@ -72,74 +72,74 @@ public class Location {
 		this.locnClass = locnClass;
 	}
 
-	public double getLength() {
+	public float getLength() {
 		return length;
 	}
 
-	public void setLength(double length) {
+	public void setLength(float length) {
 		this.length = length;
 	}
 
-	public double getWidth() {
+	public float getWidth() {
 		return width;
 	}
 
-	public void setWidth(double width) {
+	public void setWidth(float width) {
 		this.width = width;
 	}
 
-	public double getHeight() {
+	public float getHeight() {
 		return height;
 	}
 
-	public void setHeight(double height) {
+	public void setHeight(float height) {
 		this.height = height;
 	}
 
-	public double getMax_weight() {
+	public float getMax_weight() {
 		return maxWeight;
 	}
 
-	public void setMax_weight(double maxWeight) {
+	public void setMax_weight(float maxWeight) {
 		this.maxWeight = maxWeight;
 	}
 
-	public double getMax_volume() {
+	public float getMax_volume() {
 		return maxVolume;
 	}
 
-	public void setMax_volume(double maxVolume) {
+	public void setMax_volume(float maxVolume) {
 		this.maxVolume = maxVolume;
 	}
 
-	public double getMax_qty() {
+	public float getMax_qty() {
 		return maxQty;
 	}
 
-	public void setMax_qty(double maxQty) {
+	public void setMax_qty(float maxQty) {
 		this.maxQty = maxQty;
 	}
 
-	public double getOccupied_qty() {
+	public float getOccupied_qty() {
 		return occupiedQty;
 	}
 
-	public void setOccupied_qty(double occupiedQty) {
+	public void setOccupied_qty(float occupiedQty) {
 		this.occupiedQty = occupiedQty;
 	}
-	public double getCurr_vol() {
+	public float getCurr_vol() {
 		return currVol;
 	}
 
-	public void setCurr_vol(double currVol) {
+	public void setCurr_vol(float currVol) {
 		this.currVol = currVol;
 	}
 
-	public double getCurr_weight() {
+	public float getCurr_weight() {
 		return currWeight;
 	}
 
-	public void setCurr_weight(double currWeight) {
+	public void setCurr_weight(float currWeight) {
 		this.currWeight = currWeight;
 	}
 
