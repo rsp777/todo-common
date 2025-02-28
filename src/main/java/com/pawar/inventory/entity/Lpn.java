@@ -1,6 +1,8 @@
-package com.pawar.inventory.model;
+package com.pawar.inventory.entity;
 
 import java.time.LocalDateTime;
+
+import com.pawar.inventory.entity.Item;
 
 
 public class Lpn {
@@ -10,11 +12,11 @@ public class Lpn {
 	private String lpn_name;
 	private Item item;
 	private int quantity;
-	private double length;
-	private double width;
-	private double height;
-	private double weight;
-	private double volume;
+	private float length;
+	private float width;
+	private float height;
+	private float weight;
+	private float volume;
 	private int lpn_facility_status;
 	private LocalDateTime created_dttm;
 	private LocalDateTime last_updated_dttm;
@@ -25,8 +27,8 @@ public class Lpn {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Lpn(int lpn_id, String lpn_name, Item item, int quantity, double length, double width, double height,
-			double weight, double volume,int lpn_facility_status, LocalDateTime created_dttm, LocalDateTime last_updated_dttm, String created_source,
+	public Lpn(int lpn_id, String lpn_name, Item item, int quantity, float length, float width, float height,
+			float weight, float volume,int lpn_facility_status, LocalDateTime created_dttm, LocalDateTime last_updated_dttm, String created_source,
 			String last_updated_source) {
 		super();
 		this.lpn_id = lpn_id;
@@ -80,43 +82,43 @@ public class Lpn {
 		this.quantity = quantity;
 	}
 
-	public double getLength() {
+	public float getLength() {
 		return length;
 	}
 
-	public void setLength(double length) {
+	public void setLength(float length) {
 		this.length = length;
 	}
 
-	public double getWidth() {
+	public float getWidth() {
 		return width;
 	}
 
-	public void setWidth(double width) {
+	public void setWidth(float width) {
 		this.width = width;
 	}
 
-	public double getHeight() {
+	public float getHeight() {
 		return height;
 	}
 
-	public void setHeight(double height) {
+	public void setHeight(float height) {
 		this.height = height;
 	}
 
-	public double getWeight() {
+	public float getWeight() {
 		return weight;
 	}
 
-	public void setWeight(double weight) {
+	public void setWeight(float weight) {
 		this.weight = weight;
 	}
 
-	public double getVolume() {
+	public float getVolume() {
 		return volume;
 	}
 
-	public void setVolume(double volume) {
+	public void setVolume(float volume) {
 		this.volume = volume;
 	}
 

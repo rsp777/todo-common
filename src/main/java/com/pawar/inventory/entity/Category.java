@@ -1,4 +1,4 @@
-package com.pawar.inventory.model;
+package com.pawar.inventory.entity;
 
 public class Category {
 
