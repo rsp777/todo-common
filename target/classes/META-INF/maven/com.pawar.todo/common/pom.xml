@@ -5,7 +5,7 @@
 
 	<groupId>com.pawar.todo</groupId>
 	<artifactId>common</artifactId>
-	<version>Dev_v1.6</version>
+	<version>Dev_v1.7</version>
 	<packaging>jar</packaging>
 
 	<name>common</name>
