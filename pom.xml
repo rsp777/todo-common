@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -5,7 +6,7 @@
 
 	<groupId>com.pawar.todo</groupId>
 	<artifactId>common</artifactId>
-	<version>Dev_v1.7</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>common</name>
@@ -16,8 +17,14 @@
 		<java.version>17</java.version>
 	</properties>
 
+	<scm>
+		<connection>scm:git:https://github.com/rsp777/todo-common</connection>
+		<developerConnection>scm:git:ssh://git@github.com:rsp777/todo-common.git</developerConnection>
+		<url>https://github.com/rsp777/todo-common</url>
+	</scm>
+
 	<dependencies>
-		
+
 	</dependencies>
 	<distributionManagement>
 		<!--<repository>
@@ -57,6 +64,16 @@
 					<source>17</source>
 					<target>17</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>3.0.0-M1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<version>1.11.3</version>
 			</plugin>
 		</plugins>
 	</build>
